@@ -51,7 +51,7 @@ def find_best_move(board, player):
                     best_score = score
                     best_move = (i, j)
                 elif score == -1:
-                    # Check if blocking is needed
+
                     board[i][j] = opponent
                     if check_win(board, opponent):
                         best_move = (i, j)
